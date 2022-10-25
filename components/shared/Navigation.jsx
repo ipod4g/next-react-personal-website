@@ -1,0 +1,35 @@
+import React, {useState} from 'react';
+
+const Navigation = () => {
+  const [open, setOpen] = useState(false);
+  const showMenu = open ? 'top-20 opacity-100' : '';
+
+  return (
+    <nav className='sticky-nav md:flex justify-between items-center max-w-4xl mx-auto  md:mt-4 mb-1 p-8'>
+      <div className='flex justify-between items-center'>
+        <a href="#" className='pb-0'>
+          Small logo
+        </a>
+        <span className='text-3xl mx-2 cursor-pointer md:hidden block'>
+          <ion-icon name={open ? 'close' : 'menu'} onClick={() => setOpen(!open)}></ion-icon>
+        </span>
+      </div>
+      
+
+      <ul className={`md:flex md:z-auto md:static absolute
+       bg-red-600 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-300 ${showMenu}`}>
+        <li className='mx-4 my-6 md:my-0 '>
+          <a href="/">Home</a>
+        </li>
+        <li className='mx-4 my-6 md:my-0 '>
+          <a href="/blog">Blog</a>
+        </li>
+        <li className='mx-4 my-6 md:my-0'>
+        <a href="/exercise">Exercise</a>
+        </li>
+      </ul>
+    </nav>
+  );
+};
+
+export default Navigation;
