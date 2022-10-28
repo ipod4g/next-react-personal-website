@@ -1,8 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Navigation from '../components/shared/Navigation'
+import MainInfo from '../components/MainInfo/MainInfo'
+import HomeBlog from '../components/HomeBlog/HomeBlog'
+import {getAllPosts} from '../lib/posts-util'
 
-export default function Home() {
+function Home(props) {
   return (
     <div>
       <Head>
@@ -12,11 +15,26 @@ export default function Home() {
       </Head>
       
       <Navigation />
-      <main classNameName='bg-blue-700'>
-        <h1>Main Content will be here</h1>
+      <main className='flex flex-col justify-center items-start max-w-2xl mx-auto mb-16'>
+        <MainInfo />
+
+        <HomeBlog posts={props.posts} />
       </main>
 
       
     </div>
   )
 }
+
+export function getStaticProps() {
+  
+  const allPosts = getAllPosts();
+
+  return {
+    props: {
+      posts: allPosts
+    }
+  }
+}
+
+export default Home
