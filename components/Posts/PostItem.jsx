@@ -1,15 +1,16 @@
 import React from 'react';
+import Link from 'next/link';
 
 function PostItem({post}) {
   const {title, thumbnailUrl, date, description, postSlug } = post;
 
   return (
-    <a href={`/blog/${postSlug}`}>
+    <Link href={`/posts/${postSlug}`}>
       <div className='mb-8 w-full'>
         <h4>{title}</h4>
         <p>{description}</p>
       </div>
-    </a>
+    </Link>
   );
 }
 
