@@ -4,6 +4,7 @@ import Navigation from '../components/shared/Navigation'
 import MainInfo from '../components/MainInfo/MainInfo'
 import HomeBlog from '../components/HomeBlog/HomeBlog'
 import {getAllPosts} from '../lib/posts-util'
+import Contact from '../components/Contact/Contact'
 
 function Home(props) {
   return (
@@ -17,6 +18,8 @@ function Home(props) {
       <MainInfo />
 
       <HomeBlog posts={props.posts} />
+
+      <Contact />
       
     </div>
   )
