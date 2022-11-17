@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'chat-button': '#2AABEE'
+        'chat-button': '#2AABEE',
+        'icons': '#58595b'
       }
     },
   },
