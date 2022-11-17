@@ -22,12 +22,13 @@ const Navigation = () => {
         <li className='mx-4 my-6 md:my-0 ' onClick={() => setOpen(!open)}>
           <Link href="/">Home</Link>
         </li>
+        <li className='mx-4 my-6 md:my-0' onClick={() => setOpen(!open)}>
+          <Link href="/projects">Projects</Link>
+        </li>
         <li className='mx-4 my-6 md:my-0 ' onClick={() => setOpen(!open)}>
           <Link href="/posts">Blog</Link>
         </li>
-        <li className='mx-4 my-6 md:my-0' onClick={() => setOpen(!open)}>
-          <Link href="/exercise">Exercise</Link>
-        </li>
+        
       </ul>
     </nav>
   );
