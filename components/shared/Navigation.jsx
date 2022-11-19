@@ -1,15 +1,29 @@
-import React, {useState} from 'react';
+import React, { useState, useEffect} from 'react';
 import Link from 'next/link';
+import { useTheme } from 'next-themes'
 
 const Navigation = () => {
   const [open, setOpen] = useState(false);
+  const [mounted, setMounted] = useState(false)
+  const { theme, setTheme } = useTheme()
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return null
+  }
 
   return (
     <nav className='sticky-nav md:flex justify-between items-center max-w-4xl mx-auto  md:mt-4 mb-1 p-8'>
       <div className='flex justify-between items-center'>
-        <Link href="/" className='pb-0'>
-          Small logo
-        </Link>
+        <div className='cursor-pointer'>
+          {theme === 'light' 
+            ? <img onClick={() => setTheme('dark')} src="/images/icons/dark.png" alt="dark-mode" height='24px' width="24px" />
+            : <img onClick={() => setTheme('light')} src="/images/icons/light1.png" alt="dark-mode" height='24px' width="24px" />
+          }
+        </div>
         <span className='text-3xl mx-2 cursor-pointer md:hidden block'>
           <ion-icon name={open ? 'close' : 'menu'} onClick={() => setOpen(!open)}></ion-icon>
         </span>
