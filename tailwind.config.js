@@ -7,7 +7,9 @@ module.exports = {
     extend: {
       colors: {
         'chat-button': '#2AABEE',
-        'icons': '#58595b'
+        'icons': '#58595b',
+        'title': '#414042',
+        'links': '#30A9DE',
       }
     },
   },
