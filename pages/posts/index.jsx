@@ -5,10 +5,16 @@ import PostItem from '../../components/Posts/PostItem';
 function Posts(props) {
   return (
     <div>
-      <h1 className='font-bold'>Blog</h1>
+      <h1 className='font-bold'>Articles</h1>
       <p>You will find here my posts about anything </p>
 
-      {props.posts.map(post => <PostItem post={post} key={post.slug} />)}
+      <div className='sm:flex flex-wrap justify-between'>
+        {props.posts.map(post => 
+          <PostItem post={post} key={post.slug} />)
+        }
+      </div>
+
+      
     </div>
   );
 }

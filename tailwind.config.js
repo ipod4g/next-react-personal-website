@@ -10,6 +10,9 @@ module.exports = {
         'icons': '#58595b',
         'title': '#414042',
         'links': '#30A9DE',
+      },
+      flex: {
+        'blog-cards': '0 1 calc(50% - 1em)'
       }
     },
   },
