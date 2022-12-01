@@ -16,7 +16,7 @@ const Navigation = () => {
   }
 
   return (
-    <nav className='sticky-nav md:flex justify-between items-center max-w-4xl mx-auto  md:mt-4 mb-1 p-8'>
+    <nav className='sticky top-0 z-10 bg-white md:flex justify-between items-center max-w-4xl mx-auto mb-1 p-8'>
       <div className='flex justify-between items-center'>
         <div className='cursor-pointer'>
           {theme === 'light' 
@@ -31,7 +31,7 @@ const Navigation = () => {
       
 
       <ul className={`md:flex md:z-auto md:static absolute
-       bg-red-600 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 
+        w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 
        md:opacity-100 transition-all ease-in z-10 duration-500 ${open ? 'top-[80px]' : 'top-[-400px]'}`}>
         <li className='mx-4 my-6 md:my-0 ' onClick={() => setOpen(!open)}>
           <Link href="/">Home</Link>

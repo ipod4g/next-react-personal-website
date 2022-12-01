@@ -6,6 +6,7 @@ import HomeBlog from '../components/HomeBlog/HomeBlog'
 import {getAllPosts} from '../lib/posts-util'
 import Contact from '../components/Contact/Contact'
 import Experience from '../components/Experience/Experience'
+import Projects from './Projects'
 
 function Home(props) {
   return (
@@ -19,7 +20,9 @@ function Home(props) {
       <MainInfo />
 
       <Experience />
+      <Projects />
       <HomeBlog posts={props.posts} />
+      
 
       <Contact />
       

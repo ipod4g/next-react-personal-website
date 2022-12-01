@@ -3,9 +3,10 @@ import Image from 'next/image';
 
 function MainInfo(props) {
   return (
-    <div className='flex flex-col md:flex-row justify-between items-start w-full mb-10'>
+    <div className='flex flex-col md:flex-row justify-between items-start w-full my-10'>
       <div className='flex md:w-3/4 flex-col'>
-        <h1 className='font-bold text-3xl md:text-5xl mb-2 text-black'>Roman Bezushko</h1>
+        <h1 className='font-bold text-3xl md:text-5xl mb-2 text-black'>Hi there ✋</h1>
+        <h1 className='font-bold text-3xl md:text-5xl mb-2 text-black'>I am Roman Bezushko</h1>
         <div>
         Senior Front-end React developer
         <p>I am passionate about doing the best possible work</p>
@@ -31,7 +32,7 @@ function MainInfo(props) {
         </div>
         </div>
       </div>
-      <div className='flex-shrink-1 p-4 md:p-4 md:order-last order-first'>
+      {/* <div className='flex-shrink-1 p-4 md:p-4 md:order-last order-first'>
         <Image 
           className='rounded-full'
           src="/images/portfolio-image.jpg"
@@ -39,7 +40,7 @@ function MainInfo(props) {
           width={150}
           height={150}
         />
-      </div>
+      </div> */}
     </div>
   );
 }
