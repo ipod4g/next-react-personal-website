@@ -7,7 +7,7 @@ function PostItem({post}) {
 
   return (
     <Link href={`/posts/${postSlug}`}>
-      <article className='flex-blog-cards py-6 px-4 border-2 mb-6 cursor-pointer rounded-md hover:shadow-md'>
+      <article className='flex-blog-cards py-6 px-4 mb-6 cursor-pointer rounded-md hover:shadow-md border-b-8 border-r-8 border-t border-l border-black'>
         <div className='w-full h-44 relative mb-2'>
           <Image 
             className='w-full'
