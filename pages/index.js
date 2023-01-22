@@ -17,6 +17,8 @@ function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      
+
       <MainInfo />
 
       <Experience />
