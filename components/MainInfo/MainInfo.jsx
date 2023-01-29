@@ -1,15 +1,33 @@
 import React from 'react';
 import Image from 'next/image';
+import Typewriter from 'typewriter-effect';
+
 
 function MainInfo(props) {
   return (
     <div className='flex flex-col md:flex-row justify-between items-start w-full my-10'>
       <div className='flex md:w-3/4 flex-col'>
-        <h1 className='font-bold text-3xl md:text-5xl mb-2 text-black'>Hi there ✋</h1>
+        <div className='font-bold text-3xl md:text-5xl mb-2 text-black titleFont'>
+          <div className='flex'>
+            <Typewriter
+              options={{
+                strings: ['Hi', 'Hello', 'Hola',  'Йов'],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+            <span className='animate-waving inline-block'>👋</span>
+          </div>
+          
+        </div>
+      
+        {/* <h1 className='font-bold text-3xl md:text-5xl mb-2 text-black'>Hi there 👋</h1> */}
         <h1 className='font-bold text-3xl md:text-5xl mb-2 text-black'>I am Roman Bezushko</h1>
         <div>
-        Senior Front-end React developer
-        <p>I am passionate about doing the best possible work</p>
+        former web engineer. His prior experience has helped him become a tech-savvy, detail-oriented, and analytic-heavy product manager.
+        I'm developer with the product mindset
+        <p >I am passionate about doing the best possible work</p>
+
         <div className="flex mt-4">
           <a href="https://www.linkedin.com/in/romanbezushko/" target="_blank">
             <svg className='fill-icons h-6 w-6 mr-2 hover:fill-indigo-300' viewBox="0 0 56.693 56.693">
@@ -31,7 +49,21 @@ function MainInfo(props) {
           </a>
         </div>
         </div>
+        
+
+        <a href='mailto:r.bezushko93@gmail.com'>
+        Let's talk
+        </a>
+        <svg className='animate-bounce w-6 h-6' xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 24 24">\
+        <path stroke="#292D32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 22h6c5 0 7-2 7-7V9c0-5-2-7-7-7H9C4 2 2 4 2 9v6c0 5 2 7 7 7Z"/>
+        <path stroke="#292D32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.47 10.64 12 14.16l3.53-3.52"/>
+        </svg>
       </div>
+
+
+      
+
+
       {/* <div className='flex-shrink-1 p-4 md:p-4 md:order-last order-first'>
         <Image 
           className='rounded-full'

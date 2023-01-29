@@ -12,13 +12,13 @@ function Experience(props) {
         </a> or <a href="https://drive.google.com/file/d/1AdZjozv-neOI4acQAz6ME-rP9sEDU8dW/view?usp=sharing" target='_blank' className='font-bold'>download</a>  the resume</p>
         <Tabs className='flex'>
         <TabList className='flex flex-col shrink-0' >
-          <Tab selectedClassName="border-l-red-600 [&>p]:text-red-600 [&>p]:font-bold" className='flex px-4 items-center h-10 border-l-[2px] cursor-pointer outline-none'>
+          <Tab selectedClassName="border-l-chat-button [&>p]:text-chat-button [&>p]:font-bold" className='flex px-4 items-center h-10 border-l-[2px] cursor-pointer outline-none'>
             <p>2016</p>
           </Tab>
-          <Tab selectedClassName="border-l-red-600 [&>p]:text-red-600 [&>p]:font-bold" className='flex px-4 items-center h-10 border-l-[2px] cursor-pointer outline-none'>
+          <Tab selectedClassName="border-l-chat-button [&>p]:text-chat-button [&>p]:font-bold" className='flex px-4 items-center h-10 border-l-[2px] cursor-pointer outline-none'>
             <p>2017</p>
           </Tab>
-          <Tab selectedClassName="border-l-red-600 [&>p]:text-red-600 [&>p]:font-bold" className='flex px-4 items-center h-10 border-l-[2px] cursor-pointer outline-none'>
+          <Tab selectedClassName="border-l-chat-button [&>p]:text-chat-button [&>p]:font-bold" className='flex px-4 items-center h-10 border-l-[2px] cursor-pointer outline-none'>
             <p>2022</p>
           </Tab>
         </TabList>
