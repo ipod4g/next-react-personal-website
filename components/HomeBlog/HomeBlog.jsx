@@ -8,7 +8,7 @@ function HomeBlog(props) {
   return (
     <div>
       <h3 className='text-title uppercase font-bold mb-6'>
-        Recent Articles
+        Blog
       </h3>
       <div className='sm:flex flex-wrap justify-between'>
         {props.posts.map(post => <PostItem post={post} key={post.slug} />)}

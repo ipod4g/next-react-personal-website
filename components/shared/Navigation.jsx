@@ -24,18 +24,19 @@ const Navigation = () => {
             : <img onClick={() => setTheme('light')} src="/images/icons/light1.png" alt="dark-mode" height='24px' width="24px" />
           }
         </div>
-        <span className='text-3xl mx-2 cursor-pointer md:hidden block'>
+        <div className='mx-4 my-6 md:my-0 ' onClick={() => setOpen(!open)}>
+          <Link href="/">Home</Link>
+        </div>
+        {/* <span className='text-3xl mx-2 cursor-pointer md:hidden block'>
           <ion-icon name={open ? 'close' : 'menu'} onClick={() => setOpen(!open)}></ion-icon>
-        </span>
+        </span> */}
       </div>
       
 
       <ul className={`md:flex md:z-auto md:static absolute
         w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 
        md:opacity-100 transition-all ease-in z-10 duration-500 ${open ? 'top-[80px]' : 'top-[-400px]'}`}>
-        <li className='mx-4 my-6 md:my-0 ' onClick={() => setOpen(!open)}>
-          <Link href="/">Home</Link>
-        </li>
+        
         <li className='mx-4 my-6 md:my-0' onClick={() => setOpen(!open)}>
           <Link href="/projects">Projects</Link>
         </li>

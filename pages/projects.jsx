@@ -29,6 +29,29 @@ function Projects(props) {
         
       </a>
 
+
+
+      <a href="https://www.upwork.com/freelancers/~01872814c9610089a8" target="_blank" className='flex mb-6  items-start border-2 rounded p-4'>
+        <div className='relative h-16 w-16 block mr-4 shrink-0'>
+          <Image 
+            className='rounded-full'
+            src="/images/upwork.png"
+            alt='project-irream'
+            layout='fill'
+            objectFit='contain'
+          />
+        </div>
+        <div>
+          <h4 className='text-lg font-bold tracking-tight text-gray-900 dark:text-gray-100'>Freelancer on upwork</h4>
+          <p className='leading-5 text-gray-700 dark:text-gray-300'>Boost your communication skills. IRREAM language school is a place where you get confidence in speaking a foreign language.</p>
+          <div className='flex md:flex-row'>
+            <TechLabel title='React' />
+            <TechLabel title='AWS' />
+          </div>
+        </div>
+      </a>
+
+
       <a href="https://www.english-irream.com/" target="_blank" className='flex mb-6  items-start border-2 rounded p-4'>
         <div className='relative h-16 w-16 block mr-4 shrink-0'>
           <Image 
@@ -48,6 +71,7 @@ function Projects(props) {
           </div>
         </div>
       </a>
+
       
     </div>
   );
