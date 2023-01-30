@@ -22,11 +22,18 @@ function MainInfo(props) {
         </div>
       
         {/* <h1 className='font-bold text-3xl md:text-5xl mb-2 text-black'>Hi there 👋</h1> */}
-        <h1 className='font-bold text-3xl md:text-5xl mb-2 text-black'>I am Roman Bezushko</h1>
+        {/* <h1 >I'm Roman</h1> */}
+        <h2 className='font-bold text-3xl md:text-5xl mb-2 text-black'>Developer &
+          <br />
+          Product Manager
+         
+        </h2>
         <div>
-        former web engineer. His prior experience has helped him become a tech-savvy, detail-oriented, and analytic-heavy product manager.
-        I'm developer with the product mindset
-        <p >I am passionate about doing the best possible work</p>
+        {/* His prior experience has helped him become a tech-savvy, detail-oriented, and analytic-heavy product manager.
+        I'm developer with the product mindset */}
+
+        <p className='tracking-wide'>I'm Roman, developer and product manager is a tech-savvy individual who possesses a unique blend of technical and leadership skills, making them a valuable asset to any organization.</p>
+        <span>- this is what chatGPT generated -</span>
 
         <div className="flex mt-4">
           <a href="https://www.linkedin.com/in/romanbezushko/" target="_blank">

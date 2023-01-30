@@ -3,10 +3,15 @@ import Image from 'next/image'
 import Navigation from '../components/shared/Navigation'
 import MainInfo from '../components/MainInfo/MainInfo'
 import HomeBlog from '../components/HomeBlog/HomeBlog'
-import {getAllPosts} from '../lib/posts-util'
+import Blog from '../components/Blog/Blog'
+// import {getAllPosts} from '../lib/posts-util'
 import Contact from '../components/Contact/Contact'
 import Experience from '../components/Experience/Experience'
 import Projects from './Projects'
+
+import { db } from '../pages/api/firebase-config';
+import { collection, getDocs} from 'firebase/firestore';
+import { postToJSON } from '../pages/api/firebase-config';
 
 function Home(props) {
   return (
@@ -23,7 +28,12 @@ function Home(props) {
 
       <Experience />
       <Projects />
-      <HomeBlog posts={props.posts} />
+      
+
+      <Blog posts={props.posts} />
+
+
+      {/* <HomeBlog posts={props.posts} /> */}
       
 
       <Contact />
@@ -32,15 +42,29 @@ function Home(props) {
   )
 }
 
-export function getStaticProps() {
-  
-  const allPosts = getAllPosts();
+export async function getServerSideProps(context)  {
+  const postsColectionRef = await getDocs(collection(db, 'posts'))
+  const posts = postsColectionRef.docs.map(postToJSON)
+
+  // const posts = postsColectionRef.map(data => ({
+    // id: data.id,
+    // ...data.data()
+  // }))
 
   return {
-    props: {
-      posts: allPosts
-    }
+    props: { posts }
   }
 }
+
+// export function getStaticProps() {
+  
+//   const allPosts = getAllPosts();
+
+//   return {
+//     props: {
+//       posts: allPosts
+//     }
+//   }
+// }
 
 export default Home

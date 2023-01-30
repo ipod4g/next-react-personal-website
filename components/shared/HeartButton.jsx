@@ -15,7 +15,7 @@ async function getIP(){
   return data;
 }
 
-export function HeartButton({postRef, userIp, path}) {
+export function HeartButton({postRef, userIp, path, heartCount}) {
   // const heartsRef = doc(db, "posts", "second-post", 'hearts', userIp)
 
   const heartsRef = doc(db, `${path}/hearts/${userIp}`)
@@ -47,9 +47,13 @@ export function HeartButton({postRef, userIp, path}) {
   }
 
   return heartDoc?.exists() ? (
-      <button onClick={removeHeart}>💔 Unheart</button>
+      <button className='' onClick={removeHeart}>
+        <img  src="/images/icons/heart-fill.svg" alt="liked" height='24px' width="24px" />{heartCount}
+      </button>
     ) : (
-      <button onClick={addHeart}>💗 Heart</button>
+      <button onClick={addHeart}>
+         <img className='animate-pulse transition hover:scale-125' src="/images/icons/heart.svg" alt="like" height='24px' width="24px" /> {heartCount}
+      </button>
     ); 
 
 }
