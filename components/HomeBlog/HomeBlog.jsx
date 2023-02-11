@@ -14,9 +14,9 @@ function HomeBlog(props) {
         {props.posts.map(post => <PostItem post={post} key={post.slug} />)}
       </div>
 
-      <Link href="/posts" className='mt-2'>
+      {/* <Link href="/posts" className='mt-2 border py-4 px-1'>
         Read more 
-      </Link>
+      </Link> */}
 
       {/* <a className='w-full'>
         <h1>{posts[0].title}</h1>
