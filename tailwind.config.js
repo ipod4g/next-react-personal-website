@@ -3,19 +3,30 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
+  variants: {
+    extend: {
+      display: ['dark']
+    },
+  },
   theme: {
     extend: {
       colors: {
         'chat-button': '#2AABEE',
         'icons': '#58595b',
-        'title': '#414042',
+        'title': '#2d2a26',
         'links': '#30A9DE',
+        'navigation': '#121212',
+        'title-main': '#090707',
+        'title-dark': '#EFDC05',
+        'blue': '#30A9DE'
       },
       flex: {
         'blog-cards': '0 1 calc(50% - 1em)'
       },
       fontFamily: {
         titleFont: ['Poppins'],
+        checkFont: ['Roboto']
       },
       keyframes: {
         wave: {

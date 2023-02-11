@@ -16,7 +16,7 @@ const Navigation = () => {
   }
 
   return (
-    <nav className='sticky top-0 z-10 bg-white md:flex justify-between items-center max-w-4xl mx-auto mb-1 p-8'>
+    <nav className='sticky top-0 z-10 md:flex justify-between bg-white dark:bg-navigation items-center max-w-4xl mx-auto mb-1 p-8'>
       <div className='flex justify-between items-center'>
         <div className='cursor-pointer absolute top-24'>
         {theme === 'light' 

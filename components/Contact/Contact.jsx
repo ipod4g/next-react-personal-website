@@ -27,7 +27,7 @@ function Contact(props) {
 
 
   return (
-    <div className='border-2 rounded p-6 mt-6 bg-red-100'>
+    <div className='border border-black rounded p-6 mt-6 '>
       <h4>Want to hire me as a freelancer? Let's discuss.</h4>
       <p>Drop your message and let's discuss about your project.</p>
       <a href="https://telegram.me/bezushko" target="_blank"
