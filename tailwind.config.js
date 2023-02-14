@@ -19,7 +19,12 @@ module.exports = {
         'navigation': '#121212',
         'title-main': '#090707',
         'title-dark': '#EFDC05',
-        'blue': '#30A9DE'
+        'blue': '#30A9DE',
+        'test': '#f2f8f9',
+        'one': '#cccccc'
+      },
+      boxShadow: {
+        projects: '0px 4px 8px rgb(38 38 38 / 20%)'
       },
       flex: {
         'blog-cards': '0 1 calc(50% - 1em)'

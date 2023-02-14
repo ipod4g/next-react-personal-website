@@ -17,8 +17,7 @@ function Blog(props) {
       </div>
 
       <Link href="/testposts">
-        <a className='hover:scale-110 italic inline-block px-3 py-px text-sm rounded cursor-pointer
-         border border-black dark:border-white hover:text-white hover:border-white hover:bg-black'>Read more 
+        <a className='mt-6 hover:scale-105 italic inline-block px-3 py-px text-xs rounded cursor-pointer border dark:border-white '>Read more 
         
         </a>
       </Link>

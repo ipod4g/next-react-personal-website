@@ -71,7 +71,6 @@ function MainInfo(props) {
         <path stroke="#292D32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.47 10.64 12 14.16l3.53-3.52"/>
         </svg> */}
 
-        <p>More info</p>
 
 
         <svg className='animate-bounce w-10 h-10 fill-title my-5' width="40" height="40" viewBox="0 0 1920 1920"><path fill-rule="evenodd" d="M902.83 0v1699.925l-476.465-476.467L345 1304.823 960.177 1920l615.407-615.177-81.365-81.365-476.466 476.467V0z"/></svg>
