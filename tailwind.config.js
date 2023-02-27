@@ -16,12 +16,12 @@ module.exports = {
         'icons': '#58595b',
         'title': '#2d2a26',
         'links': '#30A9DE',
-        'navigation': '#121212',
+        'navigation': '#18181b',
         'title-main': '#090707',
         'title-dark': '#EFDC05',
         'blue': '#30A9DE',
         'test': '#f2f8f9',
-        'one': '#cccccc'
+        'one': '#cccccc',
       },
       boxShadow: {
         projects: '0px 4px 8px rgb(38 38 38 / 20%)'

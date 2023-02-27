@@ -8,6 +8,7 @@ import Blog from '../components/Blog/Blog'
 import Contact from '../components/Contact/Contact'
 import Experience from '../components/Experience/Experience'
 import Projects from './Projects'
+import Footer from '../components/Footer/Footer'
 
 import { db } from '../pages/api/firebase-config';
 import { collection, getDocs} from 'firebase/firestore';
@@ -31,6 +32,8 @@ function Home(props) {
       
 
       <Blog posts={props.posts} />
+
+      
 
 
       {/* <div className='flex'>
@@ -192,6 +195,8 @@ function Home(props) {
       
 
       <Contact />
+
+      <Footer />
       
     </div>
   )
