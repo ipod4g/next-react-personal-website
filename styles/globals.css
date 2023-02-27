@@ -19,3 +19,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.dark {
+  background: #18181b;
+}

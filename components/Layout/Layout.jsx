@@ -6,7 +6,7 @@ function Layout(props) {
     <Fragment>
       <Navigation />
 
-      <main className='flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 px-6'>
+      <main className='flex flex-col justify-center items-start max-w-2xl mx-auto px-6'>
         {props.children}
       </main>
     </Fragment>

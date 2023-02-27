@@ -6,7 +6,7 @@ import Typewriter from 'typewriter-effect';
 function MainInfo(props) {
   return (
     <>
-    <div className='font-bold text-3xl md:text-5xl mb-2 text-black titleFont dark:text-white'>
+    <div className='font-bold text-3xl md:text-5xl mb-2 text-title titleFont dark:text-gray-200'>
           <div className='flex'>
             <Typewriter
               options={{
@@ -26,17 +26,20 @@ function MainInfo(props) {
       
         {/* <h1 className='font-bold text-3xl md:text-5xl mb-2 text-black'>Hi there 👋</h1> */}
         {/* <h1 >I'm Roman</h1> */}
-        <h2 className='font-bold text-2xl md:text-3xl mb-2 text-title dark:text-title-dark'>Developer
+        <h2 className='font-bold text-2xl md:text-4xl mb-2 text-title dark:text-white tracking-tight'>Developer
           <span className='text-blue'> &</span>
           <br />
           Product Manager
         </h2>
         <div>
-        {/* His prior experience has helped him become a tech-savvy, detail-oriented, and analytic-heavy product manager.
-        I'm developer with the product mindset */}
 
-        <p className='tracking-wide font-sans text-gray-700 '>I'm Roman, a tech-savvy individual who possesses a unique blend of technical and leadership skills, making them a valuable asset to any organization.</p>
-        <p className='italic font-sans text-gray-700'>sent me email at <span className='px-3 bg-sky-200 py-px rounded text-sm'><a href='mailto:r.bezushko93@gmail.com'>hiroman@gmail.com</a></span> </p>
+        <p className='sm:pr-8 font-sans text-gray-700 dark:text-gray-300'>I'm Roman  🤔 , a tech-savvy individual who possesses a unique blend of technical and leadership skills, 
+        making them a valuable asset to any organization. Having an analytical mind I use a data-driven approach to build products</p>
+        <p className='italic font-sans text-gray-700 mt-2 text-sm dark:text-gray-500'>
+          sent me email at <span className='px-2 bg-sky-200 py-px rounded text-sm ml-2 dark:bg-blue dark:text-gray-300'>
+            <a href='mailto:r.bezushko93@gmail.com'>📬 hiroman@gmail.com</a>
+            </span> 
+            </p>
 
 
         {/* <div className="flex mt-4">
@@ -73,7 +76,9 @@ function MainInfo(props) {
 
 
 
-        <svg className='animate-bounce w-10 h-10 fill-title my-5' width="40" height="40" viewBox="0 0 1920 1920"><path fill-rule="evenodd" d="M902.83 0v1699.925l-476.465-476.467L345 1304.823 960.177 1920l615.407-615.177-81.365-81.365-476.466 476.467V0z"/></svg>
+        <svg className='animate-bounce w-10 h-10 fill-title mt-12 dark:fill-title-dark' width="40" height="40" viewBox="0 0 1920 1920" >
+          <path fill-rule="evenodd" d="M902.83 0v1699.925l-476.465-476.467L345 1304.823 960.177 1920l615.407-615.177-81.365-81.365-476.466 476.467V0z"/>
+          </svg>
 
         
       </div>
@@ -102,7 +107,7 @@ function MainInfo(props) {
         
       </div>
 
-      <p className='mt-2 italic text-xs'>- how OpenAI see me -</p>
+      <p className='mt-2 italic text-xs dark:text-gray-500'>- how OpenAI see me -</p>
 
       </div>
       {/* <div className='flex-shrink-1 p-4 md:p-4 md:order-last order-first block dark:hidden'>
