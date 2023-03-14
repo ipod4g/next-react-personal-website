@@ -11,34 +11,27 @@ function PostItem({post}) {
 
   return (
     <Link href={`/testposts/${slug}`}>
-
       <a
         href="#"
-        class="relative block overflow-hidden rounded-lg border border-gray-100 p-6 flex-blog-cards hover:shadow-lg 
-        transition-all dark:border-blue"
+        class="relative flex flex-col justify-between mb-6 overflow-hidden rounded-lg border-2 border-gray-100 p-6 flex-blog-cards hover:shadow-lg 
+        transition-all dark:border-blue hover:-translate-y-1 hover:border-light-blue"
       >
-        <span
-          class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-[#a5dff9] to-[#30A9DE]"
-        ></span>
+        <span class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-[#a5dff9] to-[#30A9DE]"></span>
 
-        <div class="justify-between sm:flex">
-          <div>
-            <h3 class="text-xl font-bold text-title dark:text-gray-200">
-              {title}
-            </h3>
-          </div>
-
-        </div>
-
-        <div class="mt-4 sm:pr-8">
-          <p class="text-sm text-gray-500 dark:text-gray-300">
+        <div>
+          <h3 class="text-xl font-bold text-title dark:text-gray-200">
+            {title}
+          </h3>
+          
+          <p class="mt-4 sm:pr-8 text-sm text-gray-500 dark:text-gray-300">
             {description}
           </p>
         </div>
 
+        
         <dl class="mt-6 flex justify-between sm:pr-8">
           <div >
-            <dd class="text-xs text-gray-500">{createdAt.toDateString()}</dd>
+            <dd class="text-xs text-gray-500">{createdAt.toLocaleDateString('en-us', { year:"numeric", month:"short"})}</dd>
           </div>
 
           <div class="ml-3 sm:ml-6">

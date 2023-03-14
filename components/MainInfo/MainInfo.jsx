@@ -19,13 +19,10 @@ function MainInfo(props) {
           </div>
           
         </div>
-    <div className='flex flex-col md:flex-row justify-between items-start w-full my-10'>
+    <div className='flex flex-col-reverse sm:flex-col md:flex-row justify-between items-start w-full my-0 sm:my-10'>
       
-      <div className='flex md:w-3/4 flex-col'>
+      <div className='flex md:w-3/4 flex-col mt-4 sm:mt-0 my-6 sm:my-0'>
         
-      
-        {/* <h1 className='font-bold text-3xl md:text-5xl mb-2 text-black'>Hi there 👋</h1> */}
-        {/* <h1 >I'm Roman</h1> */}
         <h2 className='font-bold text-2xl md:text-4xl mb-2 text-title dark:text-white tracking-tight'>Developer
           <span className='text-blue'> &</span>
           <br />
@@ -33,7 +30,7 @@ function MainInfo(props) {
         </h2>
         <div>
 
-        <p className='sm:pr-8 font-sans text-gray-700 dark:text-gray-300'>I'm Roman  🤔 , a tech-savvy individual who possesses a unique blend of technical and leadership skills, 
+        <p className='pr-8 sm:pr-8 font-sans text-gray-700 dark:text-gray-300'>I'm Roman  🤔 , a tech-savvy individual who possesses a unique blend of technical and leadership skills, 
         making them a valuable asset to any organization. Having an analytical mind I use a data-driven approach to build products</p>
         <p className='italic font-sans text-gray-700 mt-2 text-sm dark:text-gray-500'>
           sent me email at <span className='px-2 bg-sky-200 py-px rounded text-sm ml-2 dark:bg-blue dark:text-gray-300'>
@@ -76,16 +73,16 @@ function MainInfo(props) {
 
 
 
-        <svg className='animate-bounce w-10 h-10 fill-title mt-12 dark:fill-title-dark' width="40" height="40" viewBox="0 0 1920 1920" >
+        <svg className='animate-bounce w-10 h-10 fill-title mt-12 dark:fill-title-dark hidden sm:block' width="40" height="40" viewBox="0 0 1920 1920" >
           <path fill-rule="evenodd" d="M902.83 0v1699.925l-476.465-476.467L345 1304.823 960.177 1920l615.407-615.177-81.365-81.365-476.466 476.467V0z"/>
-          </svg>
+        </svg>
 
         
       </div>
 
 
       
-      <div className='flex-shrink-1 p-4 md:p-4 md:order-last order-first'>
+      <div className='flex-shrink-1 md:p-4 md:order-last order-first'>
         <div className=' block dark:hidden'>
           <Image 
             className=''
@@ -108,6 +105,10 @@ function MainInfo(props) {
       </div>
 
       <p className='mt-2 italic text-xs dark:text-gray-500'>- how OpenAI see me -</p>
+
+      <svg className='animate-bounce w-10 h-10 fill-title mt-12 dark:fill-title-dark block sm:hidden' width="40" height="40" viewBox="0 0 1920 1920" >
+          <path fill-rule="evenodd" d="M902.83 0v1699.925l-476.465-476.467L345 1304.823 960.177 1920l615.407-615.177-81.365-81.365-476.466 476.467V0z"/>
+      </svg>
 
       </div>
       {/* <div className='flex-shrink-1 p-4 md:p-4 md:order-last order-first block dark:hidden'>

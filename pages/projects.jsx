@@ -4,19 +4,17 @@ import Link from 'next/link';
 import TechLabel from '../components/shared/TechLabel';
 
 
-// bg-gradient-to-r
-
 
 function Projects(props) {
   return (
     <div>
-      <h2 className='font-bold text-2xl md:text-4xl tracking-tight mb-6 mt-8 text-title dark:text-gray-200'>Projects</h2>
+      <h2 className='font-bold text-2xl tracking-tight mb-6 mt-8 text-title dark:text-gray-200'>Projects</h2>
 
-      <a href="https://www.matchoffice.com" target="_blank" className='relative top-0 flex mb-6 rounded items-start 
+      <a href="https://www.matchoffice.com" target="_blank" className='relative flex mb-6 rounded items-start 
       hover:bg-white hover:top-[-4px] transition-all duration-200 hover:ease-out'>
           <div class="relative group">
-          <div class="absolute -inset-1 bg-gradient-to-r from-[#a5dff9] to-[#30A9DE] dark:from-[#386276]  dark:to-[#103343] rounded blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-          <div class="relative p-4 bg-white ring-1 ring-gray-900/5 dark:ring-blue rounded leading-none flex items-top justify-start space-x-6 dark:bg-navigation">
+          <div class="absolute -inset-1 bg-gradient-to-r from-[#a5dff9] to-[#30A9DE] dark:from-[#386276]  dark:to-[#103343] rounded blur opacity-25 group-hover:opacity-0 md:group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+          <div class="relative p-4 bg-white ring-1 ring-gray-900/5 dark:ring-blue rounded leading-none block sm:flex justify-start space-x-0 sm:space-x-6 dark:bg-navigation">
         <div className='relative h-20 w-20 block mr-4 shrink-0'>
           <Image 
             className='rounded-full'
@@ -33,7 +31,7 @@ function Projects(props) {
             Independent portal that collects all business centres in one place, making it easier for potential 
             tenants to find their future office spaces for rent.
           </p>
-          <div className='flex md:flex-row pr-48 flex-wrap'>
+          <div className='flex md:flex-row pr-0 sm:pr-48 flex-wrap'>
             <TechLabel title='Ruby on Rails' />
             <TechLabel title='React' />
             <TechLabel title='Redux' />
@@ -62,7 +60,7 @@ function Projects(props) {
       bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white to-sky-50 hover:bg-gradient-to-l'>
           <div class="relative group">
           <div class="absolute -inset-1 bg-gradient-to-r from-[#a5dff9] to-[#30A9DE] dark:from-[#386276]  dark:to-[#103343] rounded blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-          <div class="relative p-4 bg-white ring-1 ring-gray-900/5 dark:ring-blue rounded leading-none flex items-top justify-start space-x-6 dark:bg-navigation">
+          <div class="relative p-4 bg-white ring-1 ring-gray-900/5 dark:ring-blue rounded leading-none block sm:flex justify-start space-x-0 sm:space-x-6 dark:bg-navigation">
         <div className='relative h-20 w-20 block mr-4 shrink-0'>
           <Image 
             className='rounded-full'
@@ -78,7 +76,7 @@ function Projects(props) {
             I have worked with a wide range of clients and projects to deliver high-quality work that exceeds client expectations,
             committed to creating visually appealing, user-friendly websites that drive results.
           </p>
-          <div className='flex md:flex-row pr-48 flex-wrap'>
+          <div className='flex md:flex-row pr-0 sm:pr-48 flex-wrap'>
             <TechLabel title='HTML/CSS' />
             <TechLabel title='React' />
             <TechLabel title='JavaScript' />
@@ -103,7 +101,7 @@ function Projects(props) {
           bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white to-sky-50 hover:bg-gradient-to-l'>
           <div class="relative group">
           <div class="absolute -inset-1 bg-gradient-to-r from-[#bde7fa] to-[#64c1e8] dark:from-[#386276]  dark:to-[#103343] rounded blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 "></div>
-          <div class="relative p-4 bg-white ring-1 ring-gray-900/5 dark:ring-blue rounded leading-none flex items-top justify-start space-x-6 dark:bg-navigation">
+          <div class="relative p-4 bg-white ring-1 ring-gray-900/5 dark:ring-blue rounded leading-none block sm:flex items-top justify-start space-x-0 sm:space-x-6 dark:bg-navigation">
         <div className='relative h-20 w-20 block mr-4 shrink-0'>
           <Image 
             className='rounded-full'
@@ -124,7 +122,7 @@ function Projects(props) {
             Boost your communication skills. IRREAM language school is a place where you get confidence in speaking a 
             foreign language. */}
             </p>
-          <div className='flex md:flex-row pr-48 flex-wrap'>
+          <div className='flex md:flex-row pr-0 sm:pr-48 flex-wrap'>
             <TechLabel title='React' />
             <TechLabel title='AWS Hosting' />
           </div>

@@ -14,23 +14,23 @@ function Experience(props) {
           ⬇️  download</a>  the resume</p>
         <Tabs className='flex'>
         <TabList className='flex flex-col shrink-0' >
-          <Tab selectedClassName="border-l-chat-button [&>p]:text-chat-button dark:[&>p]:text-chat-button" className='flex px-4 items-center h-10 border-l-[2px] cursor-pointer outline-none'>
+          <Tab selectedClassName="border-l-chat-button [&>p]:text-chat-button dark:[&>p]:text-chat-button" className='flex px-2 sm:px-4 items-center h-10 border-l-[2px] cursor-pointer outline-none'>
             <p className='font-medium text-gray-700 dark:text-gray-500'>2023</p>
           </Tab>
-          <Tab selectedClassName="border-l-chat-button [&>p]:text-chat-button dark:[&>p]:text-chat-button" className='flex px-4 items-center h-10 border-l-[2px] cursor-pointer outline-none'>
+          <Tab selectedClassName="border-l-chat-button [&>p]:text-chat-button dark:[&>p]:text-chat-button" className='flex px-2 sm:px-4 items-center h-10 border-l-[2px] cursor-pointer outline-none'>
             <p className='font-medium text-gray-700 dark:text-gray-500'>2019</p>
           </Tab>
-          <Tab selectedClassName="border-l-chat-button [&>p]:text-chat-button dark:[&>p]:text-chat-button" className='flex px-4 items-center h-10 border-l-[2px] cursor-pointer outline-none'>
+          <Tab selectedClassName="border-l-chat-button [&>p]:text-chat-button dark:[&>p]:text-chat-button" className='flex px-2 sm:px-4 items-center h-10 border-l-[2px] cursor-pointer outline-none'>
             <p className='font-medium text-gray-700 dark:text-gray-500'>2017</p>
           </Tab>
-          <Tab selectedClassName="border-l-chat-button [&>p]:text-chat-button dark:[&>p]:text-chat-button" className='flex px-4 items-center h-10 border-l-[2px] cursor-pointer outline-none'>
+          <Tab selectedClassName="border-l-chat-button [&>p]:text-chat-button dark:[&>p]:text-chat-button" className='flex px-2 sm:px-4 items-center h-10 border-l-[2px] cursor-pointer outline-none'>
             <p className='font-medium text-gray-700 dark:text-gray-500'>2016</p>
           </Tab>
         </TabList>
 
 
         <TabPanel>
-          <div className='ml-4'>
+          <div className='ml-2 sm:ml-4'>
             <h3 className='font-medium'>Product Manager & Developer | <span className='font-bold text-links underline'>
               <a href="https://www.matchoffice.com" target="_blank">MatchOffice</a></span>
             </h3>
@@ -44,7 +44,7 @@ function Experience(props) {
               </path>
               </g>
         </svg> */}
-                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
+                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue dark:text-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd">
                     </path>
                 </svg> 
@@ -56,7 +56,7 @@ function Experience(props) {
                 </span>
               </li>
               <li className='relative mb-4'>
-                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
+                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue dark:text-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd">
                   </path>
                 </svg> 
@@ -67,7 +67,7 @@ function Experience(props) {
               </li>
 
               <li className='relative mb-4'>
-                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
+                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue dark:text-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd">
                   </path>
                 </svg> 
@@ -77,18 +77,18 @@ function Experience(props) {
                 </span>
               </li>
 
-              <span className='hidden h-px w-10 bg-gray-400 sm:inline-block dark:bg-title-dark' />
+              <span className='inline-block h-px w-10 bg-gray-400 dark:bg-title-dark' />
             </ul>
           </div>
         </TabPanel>
 
         <TabPanel>
-          <div className='ml-4'>
+          <div className='ml-2 sm:ml-4'>
             <h2 className='font-medium'>Freelancer | <span className='font-bold text-links underline'><a href="https://www.upwork.com" target="_blank">Upwork</a>   </span></h2>
             <p className='mb-4 italic text-gray-700 text-sm'>Jun 2017 - Sept 2018</p>
             <ul className='mb-4 text-gray-700'>
               <li className='relative mb-4'>
-                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
+                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue dark:text-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd">
                     </path>
                 </svg> 
@@ -101,7 +101,7 @@ function Experience(props) {
                 
               </li>
               <li className='relative mb-4'>
-                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
+                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue dark:text-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd">
                     </path>
                 </svg> 
@@ -112,18 +112,18 @@ function Experience(props) {
                 
               </li>
 
-              <span className='hidden h-px w-10 bg-gray-400 sm:inline-block' />
+              <span className='hidden h-px w-10 bg-gray-400 dark:bg-title-dark sm:inline-block' />
             </ul>
           </div>
         </TabPanel>
 
         <TabPanel>
-          <div className='ml-4'>
+          <div className='ml-2 sm:ml-4'>
             <h2 className='font-medium'>Software Engineer | <span className='font-bold text-links underline'><a href="https://www.n-ix.com" target="_blank">N-IX</a>   </span></h2>
             <p className='mb-4 italic text-gray-700 text-sm'>Jun 2017 - Sept 2018</p>
             <ul className='mb-4 text-gray-700'>
               <li className='relative mb-4'>
-                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
+                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue dark:text-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd">
                     </path>
                 </svg> 
@@ -133,7 +133,7 @@ function Experience(props) {
                 </span>
               </li>
               <li className='relative mb-4'>
-                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
+                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue dark:text-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd">
                     </path>
                 </svg> 
@@ -144,25 +144,25 @@ function Experience(props) {
                 
               </li>
 
-              <span className='hidden h-px w-10 bg-gray-400 sm:inline-block' />
+              <span className='hidden h-px w-10 bg-gray-400 dark:bg-title-dark sm:inline-block' />
             </ul>
           </div>
         </TabPanel>
 
         <TabPanel>
-          <div className='ml-4'>
+          <div className='ml-2 sm:ml-4'>
             <h2 className='font-medium'>Software Engineer | <span className='font-bold text-links underline'> <a className='hover:underline' href="https://www.softserveinc.com" target="_blank">Softserve</a></span></h2>
             <p className='mb-4 italic text-gray-700 text-sm'>Apl 2016 - Jun 2017</p>
             <ul className='mb-4 text-gray-700 '>
               <li className='relative mb-4'>
-                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
+                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue dark:text-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd">
                     </path>
                   </svg> 
                   <span className='block ml-5 dark:text-gray-300'>work closely with designers to turn visual designs into functioning web pages, completely change UI, added new functionality, take part in developing features, bug fixing, developing responsive design etc</span>
                 </li>
                 <li className='relative'>
-                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
+                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue dark:text-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd">
                     </path>
                   </svg> 
@@ -172,11 +172,8 @@ function Experience(props) {
                   
                 </li>
 
-                <span className='hidden h-px w-10 bg-gray-400 sm:inline-block' />
+                <span className='hidden h-px w-10 bg-gray-400 dark:bg-title-dark sm:inline-block' />
             </ul>
-            <TechLabel title='React' />
-            <TechLabel title='HTML/CSS3' />
-            <TechLabel title='JavaScript' />
           </div>
         </TabPanel>
 
@@ -187,7 +184,7 @@ function Experience(props) {
             <p className='mb-4 italic text-gray-700 text-sm'>Jun 2017 - Sept 2018</p>
             <ul className='mb-4 text-gray-700'>
               <li className='relative mb-4'>
-                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
+                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue dark:text-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd">
                     </path>
                 </svg> 
@@ -200,7 +197,7 @@ function Experience(props) {
                 
               </li>
               <li className='relative mb-4'>
-                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
+                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue dark:text-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd">
                     </path>
                 </svg> 
@@ -211,7 +208,7 @@ function Experience(props) {
                 
               </li>
 
-              <span className='hidden h-px w-10 bg-gray-400 sm:inline-block' />
+              <span className='hidden h-px w-10 bg-gray-400 dark:bg-title-dark sm:inline-block' />
             </ul>
           </div>
         </TabPanel>
