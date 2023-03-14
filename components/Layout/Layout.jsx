@@ -1,14 +1,24 @@
 import { Fragment } from 'react'
-import Navigation from '../shared/Navigation'
+import Navigation from '../shared/Navigation';
+import Footer from '../Footer/Footer'
 
 function Layout(props) {
   return (
     <Fragment>
       <Navigation />
 
-      <main className='flex flex-col justify-center items-start max-w-2xl mx-auto px-6'>
-        {props.children}
-      </main>
+
+
+      <div className='content-wrapper'>
+        <main className='flex flex-col flex-1 justify-start items-start max-w-2xl mx-auto px-4 sm:px-6 mt-20'>
+          {props.children}
+        </main>
+        <Footer />
+      </div>
+      
+
+
+    
     </Fragment>
   )
 }
