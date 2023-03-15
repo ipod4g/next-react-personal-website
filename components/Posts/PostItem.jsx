@@ -4,13 +4,10 @@ import Image from 'next/image';
 
 function PostItem({post}) {
   const {title, thumbnailUrl, date, description, slug } = post;
-
   const createdAt = typeof post?.createdAt === 'number' ? new Date(post.createdAt) : post.createdAt.toDate();
 
-
-
   return (
-    <Link href={`/testposts/${slug}`}>
+    <Link href={`/blog/${slug}`}>
       <a
         href="#"
         class="relative flex flex-col justify-between mb-6 overflow-hidden rounded-lg border-2 border-gray-100 p-6 flex-blog-cards hover:shadow-lg 
@@ -39,7 +36,6 @@ function PostItem({post}) {
           </div>
         </dl>
       </a>
-
     
       
       {/* <article className='flex-blog-cards mb-6 cursor-pointer rounded-t-lg

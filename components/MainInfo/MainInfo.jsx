@@ -6,11 +6,11 @@ import Typewriter from 'typewriter-effect';
 function MainInfo(props) {
   return (
     <>
-    <div className='font-bold text-3xl md:text-5xl mb-2 text-title titleFont dark:text-gray-200'>
+    <div className='font-bold text-3xl md:text-4xl mb-2 text-title titleFont dark:text-gray-200'>
           <div className='flex'>
             <Typewriter
               options={{
-                strings: ['Hi', 'Hello', 'Hola',  'Йов'],
+                strings: ['Hi', 'Hola', 'Йов', 'Hej', 'Cześć', 'Olá'],
                 autoStart: true,
                 loop: true,
               }}
@@ -19,7 +19,7 @@ function MainInfo(props) {
           </div>
           
         </div>
-    <div className='flex flex-col-reverse sm:flex-col md:flex-row justify-between items-start w-full my-0 sm:my-10'>
+    <div className='flex flex-col-reverse sm:flex-col md:flex-row justify-between items-start w-full my-0 sm:my-6'>
       
       <div className='flex md:w-3/4 flex-col mt-4 sm:mt-0 my-6 sm:my-0'>
         
@@ -30,8 +30,12 @@ function MainInfo(props) {
         </h2>
         <div>
 
-        <p className='pr-8 sm:pr-8 font-sans text-gray-700 dark:text-gray-300'>I'm Roman  🤔 , a tech-savvy individual who possesses a unique blend of technical and leadership skills, 
-        making them a valuable asset to any organization. Having an analytical mind I use a data-driven approach to build products</p>
+        <p className='pr-8 sm:pr-8 font-sans text-gray-700 dark:text-gray-300'>I'm Roman, product manager with solid technical background 🤖👨‍💻 <br />
+        I love working with entrepreneurs and startups to explore and implement the latest technologies. <br /><br/>
+        If you have any idea 🤔 , let's work together 👇</p>
+
+        {/* <p className='pr-8 sm:pr-8 font-sans text-gray-700 dark:text-gray-300'>I'm Roman  🤔 , a tech-savvy individual who possesses a unique blend of technical and leadership skills, 
+        making them a valuable asset to any organization. Having an analytical mind I use a data-driven approach to build products</p> */}
         <p className='italic font-sans text-gray-700 mt-2 text-sm dark:text-gray-500'>
           sent me email at <span className='px-2 bg-sky-200 py-px rounded text-sm ml-2 dark:bg-blue dark:text-gray-300'>
             <a href='mailto:r.bezushko93@gmail.com'>📬 hiroman@gmail.com</a>

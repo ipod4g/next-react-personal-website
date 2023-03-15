@@ -92,7 +92,6 @@ Developing a product mindset is essential for anyone who wants to succeed in the
         
 
         
-
     </div>
   );
 }

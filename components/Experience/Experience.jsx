@@ -7,9 +7,8 @@ function Experience(props) {
   return (
     <div className='mb-6'>
         <h2 className='font-bold text-2xl md:text-3xl tracking-tight mb-4 mt-8 text-title dark:text-gray-200'>Experience</h2>
-        <p className='mb-6'>you can <a href="https://drive.google.com/file/d/1AdZjozv-neOI4acQAz6ME-rP9sEDU8dW/view?usp=sharing" target='_blank' className='font-medium relative'> 
-        <span className='absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-[#a5dff9] to-[#30A9DE]' />🔎  view </a>
-        or <a href="https://drive.google.com/file/d/1AdZjozv-neOI4acQAz6ME-rP9sEDU8dW/view?usp=sharing" target='_blank' className='font-medium relative'>
+        <p className='mb-6'>you can <a href="https://drive.google.com/file/d/1AdZjozv-neOI4acQAz6ME-rP9sEDU8dW/view?usp=sharing" target='_blank' className='font-semibold relative'> 
+        <span className='absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-[#a5dff9] to-[#30A9DE]' />🔎  view</a> or <a href="https://drive.google.com/file/d/1AdZjozv-neOI4acQAz6ME-rP9sEDU8dW/view?usp=sharing" target='_blank' className='font-semibold relative'>
         <span className='absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-[#a5dff9] to-[#30A9DE]' />
           ⬇️  download</a>  the resume</p>
         <Tabs className='flex'>
@@ -31,7 +30,7 @@ function Experience(props) {
 
         <TabPanel>
           <div className='ml-2 sm:ml-4'>
-            <h3 className='font-medium'>Product Manager & Developer | <span className='font-bold text-links underline'>
+            <h3 className='font-semibold'>Product Manager & Developer | <span className='font-bold text-links underline'>
               <a href="https://www.matchoffice.com" target="_blank">MatchOffice</a></span>
             </h3>
             <p className='mb-4 italic text-gray-700 text-sm dark:text-gray-500'>Sept 2019 - till now</p>
@@ -44,7 +43,7 @@ function Experience(props) {
               </path>
               </g>
         </svg> */}
-                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue dark:text-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
+                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd">
                     </path>
                 </svg> 
@@ -56,7 +55,7 @@ function Experience(props) {
                 </span>
               </li>
               <li className='relative mb-4'>
-                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue dark:text-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
+                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd">
                   </path>
                 </svg> 
@@ -67,7 +66,7 @@ function Experience(props) {
               </li>
 
               <li className='relative mb-4'>
-                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue dark:text-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
+                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd">
                   </path>
                 </svg> 
@@ -84,11 +83,11 @@ function Experience(props) {
 
         <TabPanel>
           <div className='ml-2 sm:ml-4'>
-            <h2 className='font-medium'>Freelancer | <span className='font-bold text-links underline'><a href="https://www.upwork.com" target="_blank">Upwork</a>   </span></h2>
+            <h2 className='font-semibold'>Freelancer | <span className='font-bold text-links underline'><a href="https://www.upwork.com" target="_blank">Upwork</a>   </span></h2>
             <p className='mb-4 italic text-gray-700 text-sm'>Jun 2017 - Sept 2018</p>
             <ul className='mb-4 text-gray-700'>
               <li className='relative mb-4'>
-                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue dark:text-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
+                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd">
                     </path>
                 </svg> 
@@ -101,7 +100,7 @@ function Experience(props) {
                 
               </li>
               <li className='relative mb-4'>
-                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue dark:text-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
+                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd">
                     </path>
                 </svg> 
@@ -119,11 +118,11 @@ function Experience(props) {
 
         <TabPanel>
           <div className='ml-2 sm:ml-4'>
-            <h2 className='font-medium'>Software Engineer | <span className='font-bold text-links underline'><a href="https://www.n-ix.com" target="_blank">N-IX</a>   </span></h2>
+            <h2 className='font-semibold'>Software Engineer | <span className='font-bold text-links underline'><a href="https://www.n-ix.com" target="_blank">N-IX</a>   </span></h2>
             <p className='mb-4 italic text-gray-700 text-sm'>Jun 2017 - Sept 2018</p>
             <ul className='mb-4 text-gray-700'>
               <li className='relative mb-4'>
-                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue dark:text-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
+                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd">
                     </path>
                 </svg> 
@@ -133,7 +132,7 @@ function Experience(props) {
                 </span>
               </li>
               <li className='relative mb-4'>
-                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue dark:text-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
+                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd">
                     </path>
                 </svg> 
@@ -151,18 +150,18 @@ function Experience(props) {
 
         <TabPanel>
           <div className='ml-2 sm:ml-4'>
-            <h2 className='font-medium'>Software Engineer | <span className='font-bold text-links underline'> <a className='hover:underline' href="https://www.softserveinc.com" target="_blank">Softserve</a></span></h2>
+            <h2 className='font-semibold'>Software Engineer | <span className='font-bold text-links underline'> <a className='hover:underline' href="https://www.softserveinc.com" target="_blank">Softserve</a></span></h2>
             <p className='mb-4 italic text-gray-700 text-sm'>Apl 2016 - Jun 2017</p>
             <ul className='mb-4 text-gray-700 '>
               <li className='relative mb-4'>
-                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue dark:text-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
+                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd">
                     </path>
                   </svg> 
                   <span className='block ml-5 dark:text-gray-300'>work closely with designers to turn visual designs into functioning web pages, completely change UI, added new functionality, take part in developing features, bug fixing, developing responsive design etc</span>
                 </li>
                 <li className='relative'>
-                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue dark:text-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
+                <svg class="absolute top-[6px] w-4 h-4 mr-1.5 text-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" >
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd">
                     </path>
                   </svg> 
