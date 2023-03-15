@@ -8,7 +8,7 @@ import TechLabel from '../components/shared/TechLabel';
 function Projects(props) {
   return (
     <div>
-      <h2 className='font-bold text-2xl tracking-tight mb-6 mt-8 text-title dark:text-gray-200'>Projects</h2>
+      <h2 className='font-bold text-2xl md:text-3xl tracking-tight mb-6 mt-2 text-title dark:text-gray-200'>Projects</h2>
 
       <a href="https://www.matchoffice.com" target="_blank" className='relative flex mb-6 rounded items-start 
       hover:bg-white hover:top-[-4px] transition-all duration-200 hover:ease-out'>
@@ -27,7 +27,7 @@ function Projects(props) {
         <div>
           <h4 className='text-lg font-bold tracking-tight text-title dark:text-gray-200'>Matchoffice</h4>
           <p className='leading-5 text-gray-700 dark:text-gray-300 text-sm mt-2 mb-4 pr-8'>
-            one of the leading players in the commercial property lease market in the world. 
+            One of the leading players in the commercial property lease market in the world. 
             Independent portal that collects all business centres in one place, making it easier for potential 
             tenants to find their future office spaces for rent.
           </p>

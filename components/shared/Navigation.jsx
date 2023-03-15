@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useTheme } from 'next-themes';
 import { useRouter } from 'next/router';
 
-const Navigation = () => {
+const Navigation = ({slug}) => {
   const [open, setOpen] = useState(false);
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
@@ -16,6 +16,8 @@ const Navigation = () => {
   if (!mounted) {
     return null
   }
+
+  const checkBlog = router.pathname === '/blog' || router.pathname === "/blog/[slug]"
 
   return (
     <nav className='fixed w-full left-2/4 transform -translate-x-1/2 top-0 z-10 flex justify-between bg-white dark:bg-navigation items-center max-w-2xl px-4 sm:px-6 mx-auto p-6'>
@@ -59,35 +61,20 @@ const Navigation = () => {
         </div>
       </div>
 
-      <div className='flex gap-2  font-sans '>
+      <div className='flex gap-2 text-sm font-medium '>
         <Link href="/">
           <a className={`px-3 text-gray-700 transition hover:text-gray-500/75 dark:text-white ${router.pathname == "/" ? "text-links dark:text-links" : "text-gray-700"}`}> Home</a> 
         </Link>
         <Link href="/projects" >
           <a className={`px-3 transition hover:text-gray-500/75 dark:text-white ${router.pathname == "/projects" ? "text-links dark:text-links" : "text-gray-700"}`}>Projects</a>
         </Link>
-        <Link href="/testposts" >
-          <a className={`px-3 text-gray-700 transition hover:text-gray-500/75 dark:text-white ${router.pathname == "/testposts" ? "text-links dark:text-links" : "text-gray-700"}`}>
+        <Link href="/blog" >
+          <a className={`px-3 text-gray-700 transition hover:text-gray-500/75 dark:text-white ${checkBlog ? "text-links dark:text-links" : "text-gray-700"}`}>
             Blog
           </a>
         </Link>
       </div>
 
-      
-      
-
-      {/* <ul className={`md:flex md:z-auto md:static
-        w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 
-       md:opacity-100 transition-all ease-in z-10 duration-500 ${open ? 'top-[80px]' : 'top-[-400px]'}`}>
-        
-        <li className='mx-4 my-6 md:my-0' onClick={() => setOpen(!open)}>
-          <Link href="/projects">Projects</Link>
-        </li>
-        <li className='mx-4 my-6 md:my-0 ' onClick={() => setOpen(!open)}>
-          <Link href="/testposts">Blog</Link>
-        </li>
-        
-      </ul> */}
     </nav>
   );
 };

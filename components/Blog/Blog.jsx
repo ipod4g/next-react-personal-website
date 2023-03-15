@@ -16,7 +16,7 @@ function Blog(props) {
         {props.posts.map(post => <PostItem post={post} key={post.slug} />)}
       </div>
 
-      <Link href="/testposts">
+      <Link href="/blog">
       <a
         class="inline-block mt-6 rounded bg-gradient-to-r from-[#a5dff9] to-[#30A9DE] p-[2px]
          hover:text-white focus:outline-none focus:ring active:text-opacity-75"

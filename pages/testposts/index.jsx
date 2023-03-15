@@ -1,41 +1,33 @@
 import React from 'react';
-import { db } from '../../pages/api/firebase-config';
-import { collection, getDocs} from 'firebase/firestore';
-import Link from 'next/link';
-import { HeartButton } from '../../components/shared/HeartButton';
-import { postToJSON } from '../../pages/api/firebase-config';
+import { getAllPosts } from '../../lib/posts-util';
+import PostItem from '../../components/Posts/PostItem';
 
 function Posts(props) {
-  const {posts} = props
   return (
     <div>
-      <h1>Test posts from firebase</h1>
-      {posts.map(post => {
-        return (
-          <Link href={`/testposts/${post.slug}`} key={post.id}>
-            <div>
-              <h1>{post.title}</h1>
-              <h2>{post.description}</h2>
-            </div>
-          </Link>
-        )
-      })}
+      <h1 className='font-bold'>Articles</h1>
+      <p>You will find here my posts about anything </p>
+
+      <div className='sm:flex flex-wrap justify-between'>
+        {props.posts.map(post => 
+          <PostItem post={post} key={post.slug} />)
+        }
+      </div>
+
+      
     </div>
   );
 }
 
 
-export async function getServerSideProps(context)  {
-  const postsColectionRef = await getDocs(collection(db, 'posts'))
-  const posts = postsColectionRef.docs.map(postToJSON)
 
-  // const posts = postsColectionRef.map(data => ({
-    // id: data.id,
-    // ...data.data()
-  // }))
+export function getStaticProps() {
+  const allPosts = getAllPosts()
 
-  return {
-    props: {posts}
+  return{
+    props: {
+      posts: allPosts
+    }
   }
 }
 

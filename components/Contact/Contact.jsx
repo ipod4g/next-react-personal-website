@@ -21,7 +21,6 @@ function Contact(props) {
         console.log('some error happen', error)
       })
     
-    // need  connect to some database
     console.log('email->', email)
   }
 
@@ -29,15 +28,18 @@ function Contact(props) {
   return (
     <div className='rounded mt-8 '>
       <h4 className='text-xl font-bold tracking-tight text-title dark:text-gray-200'>Let's work together! 🚀</h4>
-      <p className='text-gray-700 mt-4 mb-2 sm:pr-20 dark:text-gray-300'>Whether you're looking for a software engineer, a product/project manager, or a dedicated team player,
-       I'm here to help.</p>
+
+      <p className='text-gray-700 mt-4 mb-2 sm:pr-20 dark:text-gray-300'>
+        Hey there! If you need a software engineer, product/project manager, 
+        or just a great team player, I'm here to lend a hand. 🤝</p>
+      
       {/* <a href="https://telegram.me/bezushko" target="_blank"
         className='bg-chat-button w-full my-6 p-2 rounded text-center font-bold text-white block '
       >
         Chat me on Telegram
         </a> */}
 
-      <p className='text-gray-700 mb-4 dark:text-gray-300'>Drop me your email, and I will get in touch</p>
+      <p className='text-gray-700 mb-4 dark:text-gray-300'>👇 Drop me your email, and I will get in touch 👇</p>
       {gotEmail && (
         <div className='my-3'>
         <p className='text-gray-700'> Thanks, I will write back to you asap 👋</p>
