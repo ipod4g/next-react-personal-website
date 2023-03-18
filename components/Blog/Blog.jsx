@@ -18,16 +18,25 @@ function Blog(props) {
 
       <Link href="/blog">
       <a
-        class="inline-block mt-6 rounded bg-gradient-to-r from-[#a5dff9] to-[#30A9DE] p-[2px]
-         hover:text-white focus:outline-none focus:ring active:text-opacity-75"
-      >
-        <span
-          class="block italic rounded bg-white px-3 py-px text-sm hover:bg-transparent
-           text-gray-700 hover:text-white dark:text-white dark:bg-navigation hover:bg-gradient-to-r hover:from-[#a5dff9] hover:to-[#30A9DE]"
+          class="inline-block mt-6 rounded"
         >
-          Read more
-        </span>
-      </a>
+          <span
+            class="block italic rounded border border-blue px-3 py-px text-sm text-gray-500"
+          >
+            Read more
+          </span>
+        </a>
+        {/* <a
+          class="inline-block mt-6 rounded bg-gradient-to-r from-[#a5dff9] to-[#30A9DE] p-[2px]
+          hover:text-white focus:outline-none focus:ring active:text-opacity-75"
+        >
+          <span
+            class="block italic rounded bg-white px-3 py-px text-sm hover:bg-transparent
+            text-gray-700 hover:text-white dark:text-white dark:bg-navigation hover:bg-gradient-to-r hover:from-[#a5dff9] hover:to-[#30A9DE]"
+          >
+            Read more
+          </span>
+        </a> */}
         {/* <a className='mt-6 hover:scale-105 c inline-block px-3 py-px text-xs rounded cursor-pointer border dark:border-white '>Read more 
         
         </a> */}

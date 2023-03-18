@@ -20,7 +20,7 @@ const Navigation = ({slug}) => {
   const checkBlog = router.pathname === '/blog' || router.pathname === "/blog/[slug]"
 
   return (
-    <nav className='fixed w-full left-2/4 transform -translate-x-1/2 top-0 z-10 flex justify-between bg-white dark:bg-navigation items-center max-w-2xl px-4 sm:px-6 mx-auto p-6'>
+    <nav className='fixed w-full left-2/4 transform -translate-x-1/2 top-0 z-10 flex justify-between bg-white dark:bg-navigation items-center max-w-2xl px-4 sm:px-6 mx-auto p-8'>
       <div className='flex justify-between items-center'>
         {/* <div className='cursor-pointer absolute top-24'> */}
         {/* {theme === 'light' 
