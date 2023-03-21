@@ -36,7 +36,7 @@ function MainInfo(props) {
 
         {/* <p className='pr-8 sm:pr-8 font-sans text-gray-700 dark:text-gray-300'>I'm Roman  🤔 , a tech-savvy individual who possesses a unique blend of technical and leadership skills, 
         making them a valuable asset to any organization. Having an analytical mind I use a data-driven approach to build products</p> */}
-        <p className='italic font-sans text-gray-700 mt-2 text-sm dark:text-gray-500'>
+        <p className='italic font-sans text-gray-500 mt-2 text-sm dark:text-gray-500'>
           sent me email at <span className='px-2 bg-sky-200 py-px rounded text-sm ml-2 dark:bg-blue dark:text-gray-300'>
             <a href='mailto:r.bezushko93@gmail.com'>📬 hiroman@gmail.com</a>
             </span> 

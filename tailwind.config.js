@@ -22,7 +22,8 @@ module.exports = {
         'blue': '#30A9DE',
         'test': '#f2f8f9',
         'one': '#cccccc',
-        'light-blue': '#a5dff9'
+        'light-blue': '#a5dff9',
+        'liked': '#F7AA97'
       },
       boxShadow: {
         projects: '0px 4px 8px rgb(38 38 38 / 20%)'

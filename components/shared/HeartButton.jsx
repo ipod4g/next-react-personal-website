@@ -48,11 +48,27 @@ export function HeartButton({postRef, userIp, path, heartCount}) {
 
   return heartDoc?.exists() ? (
       <button className='' onClick={removeHeart}>
-        <img  src="/images/icons/heart-fill.svg" alt="liked" height='24px' width="24px" />{heartCount}
+        <div className='flex rounded border border-liked px-4 py-1 text-gray-500 text-xs font-medium'>
+
+          <img className='' src="/images/icons/heart-2.svg" alt="like" height='14px' width="14px" />
+
+          <span className='px-1'>Like</span> 
+          <span>{heartCount}</span>
+          
+        </div>
+
+        {/* <img  src="/images/icons/heart-fill.svg" alt="liked" height='24px' width="24px" />{heartCount} */}
       </button>
     ) : (
       <button onClick={addHeart}>
-         <img className='animate-pulse transition hover:scale-125' src="/images/icons/heart.svg" alt="like" height='24px' width="24px" /> {heartCount}
+        <div className='group flex items-center rounded border px-4 py-1 text-xs font-medium text-gray-500'>
+          <img className='group-hover:scale-125' src="/images/icons/heart-empty.svg" alt="like" height='16px' width="16px" />
+
+          <span className='px-1'>Like</span> 
+          <span>{heartCount}</span>
+          
+        </div>
+         {/* <img className='animate-pulse transition hover:scale-125' src="/images/icons/heart.svg" alt="like" height='24px' width="24px" /> {heartCount} */}
       </button>
     ); 
 
