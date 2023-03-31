@@ -4,6 +4,7 @@ import { collection, getDoc, getDocs, doc, where, query, updateDoc, ref } from '
 import { HeartButton } from '../../components/shared/HeartButton';
 import { useDocumentData } from 'react-firebase-hooks/firestore';
 import Link from 'next/link';
+import { motion, useScroll, useSpring } from "framer-motion";
 
 
 async function getIP(){
@@ -14,6 +15,13 @@ async function getIP(){
 
 
 function Post(props) {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+
   const [userIp, setUserIp] = useState('some-user-ip')
   const { path } = props
 
@@ -41,6 +49,8 @@ function Post(props) {
 
   return (
     <div className='relative mt-12'>
+      <motion.div className="max-w-2xl mx-auto fixed top-20 h-2.5 left-0 right-0 bg-red-400 origin-top-left" style={{ scaleX }} />
+
         <Link href="/blog">
             <button type="button" aria-label="Go back to articles" 
                 className="group mb-8 flex h-8 w-8 items-center justify-center rounded-full 
@@ -58,7 +68,7 @@ function Post(props) {
         <HeartButton  postRef={docRef} userIp={userIp} path={path} heartCount={heartCount} />
       </div>
       </aside> */}
-      <article> 
+      
       <div className='border-l-[2px] flex justify-between items-end'>
 				<div className='ml-3'>
 					<time datetime="2022-09-05" class="flex items-center text-gray-500 text-sm">
@@ -73,51 +83,102 @@ function Post(props) {
 
 			</div>
         <h1 className='mt-6 font-bold text-2xl md:text-3xl tracking-tight mb-4 text-title dark:text-gray-200'>{post.title}</h1>
-        {/* <p>
-          {post.author} / {createdAt.toDateString()}
-        </p> */}
 
-        {/* <div>{post.minutesToRead}</div>
-        <h2>{post.heartCount}</h2> */}
-        {/* <h2>{post.description}</h2>
-        <h2>{post.id}</h2> */}
+        <img src="/images/chatgpt/924450.png" className='mb-6' alt="" />
+      <article className='prose'> 
+        <p className='text-gray-700 dark:text-gray-300'> At the beginning of 2023, the chatbot developed by <a className='text-blue' href="https://openai.com/">OpenAI</a> has been 
+          a widely discussed topic in the tech industry. 
+          Everybody starts testing and experimenting with it therefore, it quickly became a trending topic around the world 🌎. 
+        </p>
 
-        <p>FRIST POST TEXT Many people make New Year's resolutions, 
-            but they often fail because they are too ambitious or because people lose 
-            motivation when they don't see results right away. </p>
+        <p className='text-gray-700 dark:text-gray-300'>
 
-        <p>Sooo, pouring a coffee and let’s do it</p>
+          I tried it as well, I must say that this AI technology is revolutionary 🚀. 
+          It has the ability to generate conversational text, provide answers to any question, and even write code for you 🤯. 
+        
+        </p> 
+        <p> Making this technology a part of my daily life seems like a wonderful idea because it can improve my productivity and efficiency 💻,
+           helps generate new ideas 💡, and automate repetitive tasks 🔄.
+        </p>
 
-        <img src="/images/chatgpt/924451.png" alt="" />
+        <h2>Setting up CodeGPT on VSCode</h2>
 
-{/* ## Finish what you started
+        <p className='text-gray-700 dark:text-gray-300'>
+          To set up ChatGPT on VSCode, we are required to install an extension. However, the commonly used extension for ChatGPT has been deprecated.
+        </p>
 
-Finishing what you start is an essential ingredient for success. It doesn't matter if it's a large project or a small task, learning to complete what you have started can help you become more productive and successful.
+        <figure className=''>
+        <img src="/images/chatgpt/chatGPt-deprecated.png" alt="" />
+        <figcaption>you can read more about it here 
+          <div className='not-prose inline-block'>
+            <a href="https://github.com/gencay/vscode-chatgpt/issues/239">
+            <img className='h-4 w-4 inline-block mx-2 align-[-0.15em]' src="/images/chatgpt/github-icon.png" alt="" />
+              <span className='border-none text-links underline'>Issues 239 </span>
+            </a>
+          </div>
+            
+        </figcaption>
 
-It's important to remember that completing projects isn't just about getting them done, it's about taking pride in your work and achieving a sense of accomplishment. When you finish something that you've started, no matter how big or small, it gives you a boost of confidence and motivation to take on the next challenge.
+        </figure>
 
-By developing the habit of finishing what you start, not only will your productivity increase but so will your ability to achieve success in all areas of life.
+        <p>Therefore, in VScode, go to the extensions section and search for "Genie AI." Once you find it, click on "install".</p>
+        
+        <img src="/images/chatgpt/genie-ai.png" alt="" />
 
-## Practice new technologies
+        <p>
+        When you installed it, you highlight any part of your code click the right button on a mouse and you will see this section there
+        </p>
 
-As the world is rapidly changing, it's important to stay up-to-date with the latest technologies and trends. Sounds crazy but AI is everywhere, (chatGPT ),  blockchain technology, IoT, Extended Reality
-soo, this year a personal roadmap for myself to practice new technologies and expand my knowledge. 
+        <img src="/images/chatgpt/genie-ai-list.png" alt="" />
 
-I plan on taking online courses, attending webinars and conferences, reading books and articles about new technologies, and connecting with industry professionals who can help me understand how these technologies are being used in the real world. Additionally, I will be creating projects that utilize these new technologies so that I can gain hands-on experience.
+        <p>
+        After clicking on any of these blocks, you will need to enter your OpenAI API key in the pop-up box shown in the image below.
+        </p>
 
-By taking this approach, I hope to become an expert in the latest technologies by the end of this year.
+        <img src="/images/chatgpt/genie-api-key.png" alt="" />
 
-## Developing the product mindset
+        <h2>Generate OpenAI API key</h2>
 
-Developing a product mindset is essential for anyone who wants to succeed in the business world. It involves understanding the product, its features and benefits, and how to use it to its fullest potential. Reading is one of the best ways to develop a product mindset. By reading books, blogs, and articles related to your industry, you can gain insights into different aspects of the product that you didn't know before. You can also learn about new strategies and techniques that can help you improve your products or services. Reading also helps you stay up-to-date with industry trends and changes so that you can make better decisions when it comes to developing your products. With a strong product mindset, you will be able to build successful products that meet customer needs and generate profits for your company.</p> */}
+        <p>
+        You can easily generate your 
+        OpenAI API key by visiting the OpenAI website <br />
+        <a className='text-blue' href="https://beta.openai.com/account/api-keys"> OpenAI Api key</a>  and following the instructions provided.
+        </p>
+
+        <p>
+        Once you have generated your <code className='bg-gray-100 rounded px-0.5 py-0.5'>api key</code>, you can enter it in the pop-up box shown in the image above and start working with this extension.
+
+        </p> 
 
 
+        <img src="/images/chatgpt/generate-api.png" alt="" />
+
+        <p>
+          Now that you have entered your OpenAI API key, you can start taking advantage of the powerful features offered by ChatGPT.
+        </p>
+
+        <h3>Here are the things you can do with ChatGPT: </h3>
+
+        <ul className='font-medium'>
+          <li>Ask questions 🙋</li>
+          <li>Find bugs, refactor code, optimize ⚡️</li>
+          <li>Add comments to the code, tests 🗒️</li>
+          <li>Find problems in your code 🔍</li>
+        </ul>
+
+        <p>You can read more information about this extension <a className='text-blue' href="https://marketplace.visualstudio.com/items?itemName=genieai.chatgpt-vscode">here</a>  
+        </p>
+
+        <p>
+        Except for ChatGPT, there are many other useful extensions 
+        available for Visual Studio Code that can boost your productivity, explore the capabilities of AI technology,
+         or simply have a conversation with a chatbot. 
+         <br />
+          To explore other available extensions, you can browse the <a className='text-blue' href="https://marketplace.visualstudio.com/vscode"> Visual Studio Code Marketplace.</a>
+           
+        </p>
     
       </article>
-      
-        
-
-        
     </div>
   );
 }
